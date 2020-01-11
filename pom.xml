@@ -24,6 +24,7 @@
         <java.version>1.8</java.version>
         <poi.version>4.1.1</poi.version>
         <jsoup.version>1.12.1</jsoup.version>
+        <ehcache.version>3.8.1</ehcache.version>
         <lombok.version>1.18.10</lombok.version>
         <slf4j-api.version>1.7.26</slf4j-api.version>
         <beetl.version>2.9.9</beetl.version>
@@ -45,6 +46,11 @@
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
             <version>${jsoup.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
+            <version>${ehcache.version}</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -91,6 +97,7 @@
             <groupId>com.jfinal</groupId>
             <artifactId>enjoy</artifactId>
             <version>${enjoy.version}</version>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
